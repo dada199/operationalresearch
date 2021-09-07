@@ -42,6 +42,7 @@ class DataAPI:
         """
         if not self._df_data.empty:
             df_tail = self._df_data.tail(n)
+            df_tail = df_tail.reset_index()
             return df_tail
         else:
             logger.error(f'Please call get_df_data_from_cvs() to get trading data from cvs.')
