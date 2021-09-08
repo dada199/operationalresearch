@@ -4,7 +4,7 @@ import time
 import os
 import logging
 
-data_file_path = 'E:\\PycharmProjects\\operationalresearch\\data_file'
+data_file_path = 'C:\\Personal\\python\\operationalresearch\\data_file'
 csv_file = '600999.csv'
 
 logger = logging.getLogger(__name__)

@@ -3,8 +3,8 @@ from data.daily_data import DataAPI
 from account.account_info import Account
 from strategy.stragegy import Strategy
 
-data_file_path = 'E:\\PycharmProjects\\operationalresearch\\data_file'
-csv_file = '600028.csv'
+data_file_path = 'C:\\Personal\\python\\operationalresearch\\data_file'
+csv_file = '600888.csv'
 
 
 
@@ -21,7 +21,11 @@ if __name__ == '__main__':
 
     df_holding_stock_info = strategy.strategy_get_account()
 
-    print(df_holding_stock_info.values)
+    print(df_holding_stock_info.to_string())
+
+    print(account.get_available_asset())
+    print(account.get_total_asset())
+    print(account.get_profit_and_loss())
 
 
 
